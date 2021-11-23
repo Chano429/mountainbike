@@ -5,6 +5,9 @@
     para evitar espacios en blanco o líneas vacías*/
    }
 
+   main{
+       background-color: whitesmoke;
+   }
 
 body{
     text-align: center;
