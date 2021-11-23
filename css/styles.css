@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0px;
+    /* configuramos el margen de todos los elementos en 0 pixeles
+    para evitar espacios en blanco o líneas vacías*/
+   }
+
+
+body{
+    text-align: center;
+    /* centro todo los textos de la caja principal */    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#071B33;
+    border: 2px solid #999999;
+    padding: 10px;
+}
+.menu__lista{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+.menu__img{
+    width: 100px;
+    height: 100px;
+}
+
+}
+.menu__item{
+    list-style: none;
+}
+.menu__item a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+/* fondo section */
+.fondo{
+    background-image: url(../img/adrien-vajas-o3_3a_EyNnY-unsplash4.jpg);
+    background-size: cover;
+    /* background-size: cover, para que se adapte al contenido de la pantalla */
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+    /* con lo siguiente ubico el texto en la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fondoQuienesSomos{
+    background-image: url(../img/andhika-soreng-US06QF_sxu8-unsplash.jpg);
+    background-size: cover;
+    /* background-size: cover, para que se adapte al contenido de la pantalla */
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+    /* con lo siguiente ubico el texto en la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#columna {
+    float: left;
+    width: 220px;
+    margin: -600px 50px;
+    padding: 20px;
+    color: rgb(219, 51, 29);
+    font-size: 25px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 50px;
+    text-align: center;
+    
+   }
+   
+footer{
+    clear: both;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-top: 2px solid salmon;
+}
+.footer__img{
+    width: 50px;
+    height: 50px;
+}
+
+label{
+    font-size: 20px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(207, 115, 115);
+}
+
+h4{
+    color: rgb(207, 115, 115);
+}
