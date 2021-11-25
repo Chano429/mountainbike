@@ -14,6 +14,16 @@ body{
     /* centro todo los textos de la caja principal */    
 }
 
+nav ul li{
+    display: inline;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: rgb(32, 32, 32);
+}
+
+nav ul li:hover{
+    background-color: tomato;
+}
 .menu{
     display: flex;
     justify-content: space-between;
@@ -72,8 +82,8 @@ body{
 
 #columna {
     float: left;
-    width: 220px;
-    margin: -600px 50px;
+    width: 300px;
+    margin: -550px 50px;
     padding: 20px;
     color: rgb(219, 51, 29);
     font-size: 25px;
@@ -87,11 +97,13 @@ body{
 footer{
     clear: both;
     display: flex;
-    width: 100%;
+    grid-area: footer;
     justify-content: center;
     align-items: center;
+    margin: 5px;
     padding: 10px 0px;
-    border-top: 2px solid salmon;
+    grid-template-rows: 1fr 1fr 170px;
+    grid-template-columns: 2fr none 1fr;
 }
 .footer__img{
     width: 50px;
@@ -106,5 +118,79 @@ label{
 }
 
 h4{
-    color: rgb(207, 115, 115);
+    color:gold;
+    
 }
+
+.contenedor{
+    padding-top: 50px;
+    overflow: hidden;
+}
+.contenedor__video{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 25%;
+
+    float: right;
+    margin: 00px 5px;
+    padding: 10px;
+    color: rgb(14, 13, 13);
+    line-height: 50px;
+    
+}
+
+#plantilla{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        " menu menu" /* 100px */
+        " producto publicidad" /* 2fr */
+        " servicios publicidad" /* 3fr */
+        " footer footer"; /* 170px */
+        /* 20%  auto 300px  */
+    grid-template-rows: 2fr auto 3fr 170px;
+    grid-template-columns: repeat(2, 3fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}  
+
+
+#productos{
+    display: grid;
+    grid-area: productos;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+#productos__caja{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 25%;
+    border-color: orange;
+    border-style: solid;
+    padding: 5px;
+}
+.productos__detalle{
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 25%;
+    border-color: orange;
+    padding: 25px;
+    margin: 10%;
+}
+    
+.menu{
+    grid-area: menu;
+    background-color: rgb(14, 13, 13);
+    }
+    
+.border-items{
+    border: 3px;
+    border-color: orange;
+}  
+
