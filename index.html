@@ -5,82 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountain Bike</title>
+  
     <!-- link css -->
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
 <body>
-    
-    <header>
-        <!-- "header" encabezado de la página -->
-        <nav class="menu">
-            <img src="./img/logo mountain bike.jpg" width="100" height="100" alt="logo mountain bike" class="menu__img">
-        <!-- "img src" para insertar una imagen -->
-            <ul class="menu__lista">
-                <!-- "ul" es para realizar listas desordenadas -->
-                <li class="menu__item">
-                    <!-- "li" list, para listar -->
-                    <a href="./index.html">Inicio</a>
-                    <!-- "<a></a>" ancla que sirve para linkear a otras páginas los botones -->
-                </li>
-                <li class="menu__item"><a href="./pages/quienessomos.html">Quienes somos</a></li>
-                <li class="menu__item"><a href="./pages/rodados.html">Rodados</a></li>
-                <li class="menu__item"><a href="./pages/accesorios.html">Accesorios</a></li>
-                <li class="menu__item"><a href="./pages/repuestos.html">Repuestos</a></li>
-                <li class="menu__item"><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
-        <!-- seccion fondo/banner/encabezado -->
-        <section class="fondo">
+    <div id="plantilla">
+        <header>
+            <!-- "header" encabezado de la página -->
+            <nav class="menu">
+                <img src="./img/logo mountain bike.jpg" width="100" height="100" alt="logo mountain bike" class="menu__img">
+            <!-- "img src" para insertar una imagen -->
+                <ul class="menu__lista">
+                    <!-- "ul" es para realizar listas desordenadas -->
+                    <li class="menu__lista__item">
+                        <!-- "li" list, para listar -->
+                        <a href="./index.html">Inicio</a>
+                        <!-- "<a></a>" ancla que sirve para linkear a otras páginas los botones -->
+                    </li>
+                    <li class="menu__lista__item"><a href="./pages/quienessomos.html">Quienes somos</a></li>
+                    <li class="menu__lista__item"><a href="./pages/rodados.html">Rodados</a></li>
+                    <li class="menu__lista__item"><a href="./pages/accesorios.html">Accesorios</a></li>
+                    <li class="menu__lista__item"><a href="./pages/repuestos.html">Repuestos</a></li>
+                    <li class="menu__lista__item"><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
             
-        </section>
+            
 
-    </header>
-    <hr>
-    <!-- "hr" es para insertar una línea -->
-    <main>
-        <!-- <div class="contenedor">
-            <h2>El video del día</h2>
-            <div class="contenedor__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/X79TnHzPn2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div> -->
-        <!-- "main" cuerpo de la página -->
-        <aside id="columna">
-            <blockquote>
-                <h4>
-                    Te da igual el reconocimiento,
-                la prensa,
-                las medallas
-                y el dinero,
-                tú solo quieres caminos, 
-                monte, barro,
-                un par de amigos y
-                nuestras bicicletas.
-                </h4>
-            </blockquote>
+        </header>
+        
+        <hr>
+        <!-- "hr" es para insertar una línea -->
+        <main>
             
-            <br>
-            <blockquote>Eres ciclista!!!</blockquote>
-        </aside> 
         
+            <!-- seccion fondo/banner/encabezado -->
+            <section class="fondo">
+                        
+            <!-- ver section que quede a la derecha no me está quedando -->
+                <aside class="contenedor__video">
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X79TnHzPn2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </aside>
+            
+                
+            </section>
+
     <!-- seccion main -->
-    </main>
-    
-    </section>             
-    <footer>
-        <!-- "footer" pié de página -->
-        <section class="footer" id="footer">
-                <div class="footer">
-                    <a href="https://www.facebook.com"><img src="./img/logo facebook.jfif" alt="logo facebook" target="blank" class="footer__img"></a>
-                    <a href="https://www.instagram.com"><img src="./img/instagram.jpg" alt="logo instagram" target="blank" class="footer__img"></a>         
-                    <a href="https://www.google.com/maps/place/Av.+del+Libertador+1749,+C1425AAD+CABA/@-34.5832417,-58.4008541,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca9e24c3a6d3:0x4fedb740a8cf5633!8m2!3d-34.5832417!4d-58.3986654"><img src="./img/placeholder.png" alt="donde estamos?" target="bla_nk" class="footer__img"></a>
-                   <hr>
-                    <small>Derechos Reservados &copy; chanoceballos</small>
+
+            <!-- <div class="contenedor">
+                <h2>El video del día</h2>
+                <div class="contenedor__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X79TnHzPn2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-        </section>
+            </div> -->
+            <!-- "main" cuerpo de la página -->
+            <aside id="columna">
+                <blockquote>
+                    <h4>
+                        Te da igual el reconocimiento,
+                    la prensa,
+                    las medallas
+                    y el dinero,
+                    tú solo quieres caminos, 
+                    monte, barro,
+                    un par de amigos y
+                    nuestras bicicletas.
+                    </h4>
+                </blockquote>
+                
+                <br>
+                <blockquote><h4>Eres ciclista!!!</h4></blockquote>
+            </aside> 
+
         
-    </footer>
+        </main>
+        
+        </section>             
+        <footer>
+            <!-- "footer" pié de página -->
+            <section class="footer" id="footer">
+                    <div class="footer">
+                        <a href="https://www.facebook.com"><img src="./img/logo facebook.jfif" alt="logo facebook" target="blank" class="footer__img"></a>
+                        <a href="https://www.instagram.com"><img src="./img/instagram.jpg" alt="logo instagram" target="blank" class="footer__img"></a>         
+                        <a href="https://www.google.com/maps/place/Av.+del+Libertador+1749,+C1425AAD+CABA/@-34.5832417,-58.4008541,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca9e24c3a6d3:0x4fedb740a8cf5633!8m2!3d-34.5832417!4d-58.3986654"><img src="./img/placeholder.png" alt="donde estamos?" target="bla_nk" class="footer__img"></a>
+                    <hr>
+                        <small>Derechos Reservados &copy; chanoceballos</small>
+                    </div>
+            </section>
+            
+        </footer>
+    </div>
 </body>
 </html>

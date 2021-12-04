@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oxygen:wght@300&family=Rubik:ital@1&display=swap');
+/* tragio fuente, es mejor importar y dejar en estilos */
+
 *{
     padding: 0;
     margin: 0px;
@@ -5,7 +8,7 @@
     para evitar espacios en blanco o líneas vacías*/
    }
 
-   main{
+main{
        background-color: whitesmoke;
    }
 
@@ -14,38 +17,38 @@ body{
     /* centro todo los textos de la caja principal */    
 }
 
-nav ul li{
-    display: inline;
-    padding: 10px 10px;
-    border-radius: 15px;
-    background-color: rgb(32, 32, 32);
-}
-
-nav ul li:hover{
-    background-color: tomato;
-}
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:#071B33;
-    border: 2px solid #999999;
     padding: 10px;
+    font-family: Oxygen;
 }
 .menu__lista{
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+}
+.menu__lista__item{
+    display: inline;
+    padding:10px 10px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.menu__lista__item:hover{
+    background-color: tomato;
+}
+
 .menu__img{
     width: 100px;
     height: 100px;
 }
 
-}
 .menu__item{
     list-style: none;
 }
-.menu__item a{
+.menu__lista__item a{
     text-decoration: none;
     color:whitesmoke;
 }
@@ -118,8 +121,11 @@ label{
 }
 
 h4{
-    color:gold;
-    
+    color:rgb(7, 7, 7);
+    font-family: Comforter Brush;
+    font-size: 30px;
+    line-height: 150%;
+    text-shadow: white 0 3px;
 }
 
 .contenedor{
@@ -130,12 +136,13 @@ h4{
     width: 250px;
     height: 250px;
     overflow: hidden;
-    border-radius: 25%;
+    border-radius: 10%;
 
     float: right;
-    margin: 00px 5px;
-    padding: 10px;
+    margin: 20px 5px;
+    padding: 0px;
     color: rgb(14, 13, 13);
+    border-style: double;
     line-height: 50px;
     
 }
@@ -150,38 +157,37 @@ h4{
         " footer footer"; /* 170px */
         /* 20%  auto 300px  */
     grid-template-rows: 2fr auto 3fr 170px;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: auto 200px;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }  
 
 
 #productos{
-    display: grid;
-    grid-area: productos;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
+    grid-area: producto;
+    
 }
-#productos__caja{
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 25%;
-    border-color: orange;
-    border-style: solid;
-    padding: 5px;
+#productos__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll; /*barra lateral de scroll*/
+    padding: 15px;
 }
-.productos__detalle{
-    width: 100px;
-    height: 30px;
-    overflow: hidden;
-    border-style: solid;
-    border-radius: 25%;
-    border-color: orange;
-    padding: 25px;
-    margin: 10%;
+.productos__contenedor__card{
+    width: 250px;
+    height: 250px;
+    overflow: scroll;
+    border-radius: 15%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: grey;
+}
+
+.publicidad{
+    grid-area: publicidad;
+    background-color: grey;
+    background-image: url(https://images.unsplash.com/photo-1531502774286-5e4e8e94879f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
     
 .menu{

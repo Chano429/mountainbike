@@ -9,58 +9,53 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-     <header>
-    <!-- "header" encabezado de la página -->
-    <nav class="menu">
-            <img src="../img/logo mountain bike.jpg" width="100" height="100" alt="logo mountain bike" class="menu__img">
-        <!-- "img src" para insertar una imagen -->
-            <ul class="menu__lista">
-                <!-- "ul" es para realizar listas desordenadas -->
-                <li class="menu__item">
-                    <!-- "li" list, para listar -->
-                    <a href="../index.html">Inicio</a>
-                    <!-- "<a></a>" ancla que sirve para linkear a otras páginas los botones -->
-                </li>
-                <li class="menu__item"><a href="./quienessomos.html">Quienes somos</a></li>
-                <li class="menu__item"><a href="./rodados.html">Rodados</a></li>
-                <li class="menu__item"><a href="./accesorios.html">Accesorios</a></li>
-                <li class="menu__item"><a href="./repuestos.html">Repuestos</a></li>
-                <li class="menu__item"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <div id="plantilla">
+        <header class="border-items">
+            <!-- "header" encabezado de la página -->
+            <nav class="menu">
+                <img src="../img/logo mountain bike.jpg" width="100" height="100" alt="logo mountain bike" class="menu__img">
+            <!-- "img src" para insertar una imagen -->
+                <ul class="menu__lista">
+                    <!-- "ul" es para realizar listas desordenadas -->
+                    <li class="menu__lista__item">
+                        <!-- "li" list, para listar -->
+                        <a href="../index.html">Inicio</a>
+                        <!-- "<a></a>" ancla que sirve para linkear a otras páginas los botones -->
+                    </li>
+                    <li class="menu__lista__item"><a href="./quienessomos.html">Quienes somos</a></li>
+                    <li class="menu__lista__item"><a href="./rodados.html">Rodados</a></li>
+                    <li class="menu__lista__item"><a href="./accesorios.html">Accesorios</a></li>
+                    <li class="menu__lista__item"><a href="./repuestos.html">Repuestos</a></li>
+                    <li class="menu__lista__item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="servicios" class="border-items"></section>
 
-    </header>
-    <hr>
-    <!-- "hr" es para insertar una línea -->
-    <main class="border-items">
-        <!-- "main" cuerpo de la página -->
-        <section id="productos">
-            <img src="../img/indumentaria 1.jpg" class="border-items" id="productos__caja"" alt="fondo bike">
-            <h4 class="productos__detalle">Remera y bermudas</h4>
-            <br>
-            <img src="../img/indumentaria 2.jpg" class="border-items" id="productos__caja" alt="fondo bike">
-            <h4 class="productos__detalle">Equipo completo</h4>
-            <br>
-            <img src="../img/remera.jpg" class="border-items" id="productos__caja"" alt="fondo bike">
-            <h4 class="productos__detalle">Remeras</h4>
-            <br>
-            <img src="../img/guantes.png.opdownload" class="border-items" id="productos__caja" alt="fondo bike">
-            <h4 class="productos__detalle">Guantes</h4>
-            <br>
+        <section id="productos" class="border-items">
+            <div>
+                <img src="../img/indumentaria 1.jpg" class="productos__contenedor__card" alt="fondo bike">
+                <img src="../img/indumentaria 2.jpg" class="productos__contenedor__card" alt="fondo bike">
+                <img src="../img/remera.jpg" class="productos__contenedor__card" alt="fondo bike">
+                <img src="../img/guantes.png.opdownload" class="productos__contenedor__card"alt="fondo bike">
+            </div>
         </section>
-    </main>
-    <footer>
-        <!-- "footer" pié de página -->
-        <section class="footer" id="footer">
-                <div class="footer">
-                    <a href="https://www.facebook.com"><img src="../img/logo facebook.jfif" alt="logo facebook" target="blank" class="footer__img"></a>
-                    <a href="https://www.instagram.com"><img src="../img/instagram.jpg" alt="logo instagram" target="blank" class="footer__img"></a>         
-                    <a href="https://www.google.com/maps/place/Av.+del+Libertador+1749,+C1425AAD+CABA/@-34.5832417,-58.4008541,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca9e24c3a6d3:0x4fedb740a8cf5633!8m2!3d-34.5832417!4d-58.3986654"><img src="../img/placeholder.png" alt="donde estamos?" target="bla_nk" class="footer__img"></a>
-                   <hr>
-                    <small>Derechos Reservados &copy; chanoceballos</small>
-                </div>
-        </section>
-             
-    </footer>
+                
+        <aside class="publicidad border-items"></aside>
+
+        <footer>
+            <!-- "footer" pié de página -->
+            <section class="footer" id="footer">
+                    <div class="footer">
+                        <a href="https://www.facebook.com"><img src="../img/logo facebook.jfif" alt="logo facebook" target="blank" class="footer__img"></a>
+                        <a href="https://www.instagram.com"><img src="../img/instagram.jpg" alt="logo instagram" target="blank" class="footer__img"></a>         
+                        <a href="https://www.google.com/maps/place/Av.+del+Libertador+1749,+C1425AAD+CABA/@-34.5832417,-58.4008541,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca9e24c3a6d3:0x4fedb740a8cf5633!8m2!3d-34.5832417!4d-58.3986654"><img src="../img/placeholder.png" alt="donde estamos?" target="bla_nk" class="footer__img"></a>
+                    <hr>
+                        <small>Derechos Reservados &copy; chanoceballos</small>
+                    </div>
+            </section>
+        </footer>
+    </div>    
 </body>
 </html>
